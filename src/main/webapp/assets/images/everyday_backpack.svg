@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_everyday_backpack_svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow_everyday_backpack_svg" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <rect x="24" y="20" width="352" height="280" rx="14" fill="url(#grad_everyday_backpack_svg)" filter="url(#shadow_everyday_backpack_svg)"/>
+  <circle cx="200" cy="130" r="68" fill="#ffffff" fill-opacity="0.18"/>
+  <g transform="translate(200, 130)" fill="#ffffff">
+    <path d="M-24 -15 C-24 -38 -15 -42 0 -42 C15 -42 24 -38 24 -15 L24 35 C24 40 18 42 12 42 L-12 42 C-18 42 -24 40 -24 35 Z" fill="#ffffff"/><rect x="-15" y="-5" width="30" height="24" rx="5" fill="#a7f3d0"/><line x1="-15" y1="-5" x2="15" y2="-5" stroke="#059669" stroke-width="2"/>
+  </g>
+  <text x="200" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Everyday Backpack</text>
+  <text x="200" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Compact Urban Daypack</text>
+</svg>

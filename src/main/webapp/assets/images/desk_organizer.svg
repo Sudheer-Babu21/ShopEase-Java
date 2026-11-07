@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_desk_organizer_svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow_desk_organizer_svg" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <rect x="24" y="20" width="352" height="280" rx="14" fill="url(#grad_desk_organizer_svg)" filter="url(#shadow_desk_organizer_svg)"/>
+  <circle cx="200" cy="130" r="68" fill="#ffffff" fill-opacity="0.18"/>
+  <g transform="translate(200, 130)" fill="#ffffff">
+    <rect x="-30" y="-20" width="60" height="50" rx="4" fill="#ffffff" fill-opacity="0.9"/><rect x="-25" y="-35" width="14" height="20" rx="2" fill="#e2e8f0"/><rect x="-8" y="-40" width="14" height="26" rx="2" fill="#cbd5e1"/><rect x="9" y="-30" width="16" height="16" rx="2" fill="#e2e8f0"/>
+  </g>
+  <text x="200" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Desk Organizer</text>
+  <text x="200" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Multi-Slot Metal Mesh Caddy</text>
+</svg>

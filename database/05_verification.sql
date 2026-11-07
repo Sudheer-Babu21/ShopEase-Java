@@ -1,0 +1,56 @@
+-- ====================================================================
+-- Script: 05_verification.sql
+-- Description: Verifies relational tables, sequence states, and record counts
+-- Target: Oracle Database XE 10g (and compatible)
+-- Execute as: shoppingcart user
+-- ====================================================================
+
+SET LINESIZE 120
+SET PAGESIZE 50
+
+PROMPT ====================================================================
+PROMPT VERIFYING ONLINE SHOPPING CART DATABASE SCHEMA
+PROMPT ====================================================================
+
+PROMPT 1. TABLE ROW COUNTS:
+SELECT 'USERS' AS TABLE_NAME, COUNT(*) AS ROW_COUNT FROM USERS
+UNION ALL
+SELECT 'CATEGORIES', COUNT(*) FROM CATEGORIES
+UNION ALL
+SELECT 'PRODUCTS', COUNT(*) FROM PRODUCTS
+UNION ALL
+SELECT 'CART_ITEMS', COUNT(*) FROM CART_ITEMS
+UNION ALL
+SELECT 'ORDERS', COUNT(*) FROM ORDERS
+UNION ALL
+SELECT 'ORDER_ITEMS', COUNT(*) FROM ORDER_ITEMS;
+
+PROMPT 
+PROMPT 2. SEQUENCES STATUS:
+SELECT SEQUENCE_NAME, LAST_NUMBER, INCREMENT_BY 
+FROM USER_SEQUENCES 
+WHERE SEQUENCE_NAME LIKE 'SEQ_%'
+ORDER BY SEQUENCE_NAME;
+
+PROMPT 
+PROMPT 3. SAMPLE PRODUCTS:
+SELECT PRODUCT_ID, NAME, PRICE, STOCK_QTY, IS_ACTIVE 
+FROM PRODUCTS 
+WHERE ROWNUM <= 5;
+
+PROMPT 
+PROMPT 4. SAMPLE USERS (NO PASSWORDS EXPOSED):
+SELECT USER_ID, NAME, EMAIL, ROLE, PHONE 
+FROM USERS;
+
+PROMPT 
+PROMPT 5. CHECK CONSTRAINTS VALIDATION:
+SELECT CONSTRAINT_NAME, TABLE_NAME, SEARCH_CONDITION 
+FROM USER_CONSTRAINTS 
+WHERE CONSTRAINT_TYPE = 'C' 
+  AND TABLE_NAME IN ('USERS', 'PRODUCTS', 'CART_ITEMS', 'ORDERS', 'ORDER_ITEMS')
+  AND CONSTRAINT_NAME LIKE 'CHK_%';
+
+PROMPT ====================================================================
+PROMPT DATABASE VERIFICATION COMPLETED
+PROMPT ====================================================================

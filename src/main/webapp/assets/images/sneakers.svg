@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_sneakers_svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0e7490" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow_sneakers_svg" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc" rx="16"/>
+  <rect x="24" y="20" width="352" height="280" rx="14" fill="url(#grad_sneakers_svg)" filter="url(#shadow_sneakers_svg)"/>
+  <circle cx="200" cy="130" r="68" fill="#ffffff" fill-opacity="0.18"/>
+  <g transform="translate(200, 130)" fill="#ffffff">
+    <path d="M-36 10 C-36 -5 -20 -15 5 -15 C20 -15 36 0 38 15 L38 25 L-36 25 Z" fill="#ffffff"/><rect x="-38" y="22" width="78" height="8" rx="3" fill="#67e8f9"/><line x1="-5" y1="-15" x2="15" y2="8" stroke="#0891b2" stroke-width="2"/><line x1="2" y1="-15" x2="22" y2="8" stroke="#0891b2" stroke-width="2"/>
+  </g>
+  <text x="200" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Casual Sneakers</text>
+  <text x="200" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Low-Top Lifestyle Canvas</text>
+</svg>
